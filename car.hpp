@@ -3,10 +3,20 @@
 
 class car
 {
-    std::string Make;
-    std::string Model;
-    
+    std::string make;
+    std::string model;
+    int year;
+    double speed;
+    int maxSpeed;
 
+public:
+
+    car();
+
+    std::string getFullName(int, std::string, std::string);
+
+    void Accelerate(double);
+    void Decelerate(double);
 
 
 };
